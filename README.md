@@ -27,7 +27,14 @@ Task 2 Description
 * Creation of Angular page that list Membership throught CiviCRM API
 * Interactive Table that shows data filters throught Angular DataTables
 
-Developmente by
+### Task Test:
+
+* First, create the databases civicrm and compucorpt2. there's two scripts .sql with the db names in project's root folder
+* Second, Clone the project.
+* Third, Enter via browser in task2/ to see the Drupal CMS. Then authenticate with user: admin / pass: admin
+* Fourth, Type after task2/ this -> civicrm/a/#/main to see the angular extension. the Extension will display the list of all memberships and you can sort by column and search by any field in the datagrid.
+
+Development by
 -----
 
 Enver Vivas.
