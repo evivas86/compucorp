@@ -29,10 +29,10 @@ Task 2 Description
 
 ### Task Test:
 
-*First, Enter via browser in task2/ to see the Drupal CMS. Then authenticate with user: admin / pass: admin
-*Second, Enter to CiviCRM link on Navigation Menu
-*Third, In CiviCRM top menu. Go to: Memberships -> angular Extension
-*Fourth, The Extension will display the list of all memberships and you can sort by column and search by any field in the datagrid.
+* First, Enter via browser in task2/ to see the Drupal CMS. Then authenticate with user: admin / pass: admin
+* Second, Enter to CiviCRM link on Navigation Menu
+* Third, In CiviCRM top menu. Go to: Memberships -> angular Extension
+* Fourth, The Extension will display the list of all memberships and you can sort by column and search by any field in the datagrid.
 
 Development by
 -----
