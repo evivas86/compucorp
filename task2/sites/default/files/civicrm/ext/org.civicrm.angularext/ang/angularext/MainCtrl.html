@@ -1,0 +1,45 @@
+<div class="crm-container">
+  <div crm-ui-debug="Memberships"></div>
+    <div crm-ui-accordion="{title: ts('Memberships')}">
+      <div class="crm-block">
+        <div class="crm-group">
+          <table id="table" cellspacing="0" datatable="ng" dt-options="dtOptions" >
+            <thead>
+              <tr>
+                <th>Display Name</th>
+                <th>Membership Type</th>
+                <th>Member Since</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Source</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat = "mem in Memberships">
+                <td>{{mem.contact.sort_name}}</td>
+                <td>{{mem.source}}</td>
+                <td>{{ mem.join_date | date:"MM/dd/yyyy" }}</td>
+                <td>{{ mem.start_date | date:"MM/dd/yyyy" }}</td>
+                <td>{{ mem.end_date | date:"MM/dd/yyyy" }}</td>
+                <td>{{ mem.source | date:"MM/dd/yyyy" }}</td>
+                <td>{{mem.status.label}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Since</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Source</th>
+                <th>Status</th>
+              </tr>
+            </tfoot>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

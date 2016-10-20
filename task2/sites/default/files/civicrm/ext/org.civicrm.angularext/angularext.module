@@ -1,0 +1,13 @@
+<?php
+
+function test_menu() {
+ $items = array();
+ $items['civicrm/menupath'] =  array(
+ 'title' => 'Page Title',
+ 'type' =>  MENU_VISIBLE_IN_BREADCRUMB,
+ …  );
+ 
+return $items;
+}
+
+?>

@@ -11,14 +11,63 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Compucorp Test</h1>
-        <p>
-          Tasks for job apliying...
-        </p>
+        <h1>Compucorp Tasks for Route 1</h1>
         <p>
           <a class="btn btn-lg btn-primary" href="task1" role="button">Task 1</a>
           <a class="btn btn-lg btn-primary" href="task2" role="button">Task 2</a>
         </p>
+
+        <article class="markdown-body entry-content" itemprop="text">
+
+<blockquote>
+<p>Project for Job Application</p>
+</blockquote>
+
+<h2>Task 1 Description</h2>
+
+<ul>
+<li>Build a simple HTML/JS app preferably based on AngularJS v1 which, when you open the site, asks for a permission to read your current location, and then uses the <a href="http://openweathermap.org/current">http://openweathermap.org/current</a> public API to fetch the weather for that location and displays it.</li>
+<li>If the user denies to share the location, show a little input form for entering postcode or country, and display the weather based on that location.</li>
+</ul>
+
+<h3>Functions that covers this task:</h3>
+
+<ul>
+<li>API Calls for <a href="http://openweathermap.org/current">http://openweathermap.org/current</a> to get location-based wheather information.</li>
+<li>Input for search weather in other ubication if user denies to share location.</li>
+<li>Interactive map that points to the current location or searched location.</li>
+</ul>
+
+<h2>Task 2 Description</h2>
+
+<ul>
+<li>Create a new CiviCRM extension that creates a new page in CiviCRM that displays a list of the current memberships.</li>
+<li>Create a simple filter on the page to filter by membership start date from and to.</li>
+</ul>
+
+<h3>Functions that covers this task:</h3>
+
+<ul>
+<li>Installation of: Drupal CMS 7.51, CiviCRM 4.7 Module for Drupal</li>
+<li>Creation of Angular Extension for CiviCRM</li>
+<li>Creation of Angular page that list Membership throught CiviCRM API</li>
+<li>Interactive Table that shows data filters throught Angular DataTables</li>
+<li>Implementation of Hook (create a link to angular extension)</li>
+</ul>
+
+<h3>Task Test:</h3>
+
+<ul>
+<li>First, Enter via browser in task2/ to see the Drupal CMS. Then authenticate with user: admin / pass: admin</li>
+<li>Second, Enter to CiviCRM link on Navigation Menu</li>
+<li>Third, In CiviCRM top menu. Go to: Memberships -> angular Extension</li>
+<li>Fourth, The Extension will display the list of all memberships and you can sort by column and search by any field in the datagrid.</li>
+</ul>
+
+<h2>Development by</h2>
+
+<p>Enver Vivas.</p>
+</article>
       </div>
     </div>
   </body>

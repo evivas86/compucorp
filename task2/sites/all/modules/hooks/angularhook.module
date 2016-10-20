@@ -1,0 +1,36 @@
+<?php
+
+
+function angularext_civicrm_navigationMenu(&$params) {
+ 
+  // Check that our item doesn't already exist
+  $menu_item_search = array('url' => 'civicrm/a/#/main');
+  $menu_items = array();
+  CRM_Core_BAO_Navigation::retrieve($menu_item_search, $menu_items);
+ 
+  if ( ! empty($menu_items) ) { 
+    return;
+  }
+ 
+  $navId = CRM_Core_DAO::singleValueQuery("SELECT max(id) FROM civicrm_navigation");
+  if (is_integer($navId)) {
+    $navId++;
+  }
+  // Find the Report menu
+  $reportID = CRM_Core_DAO::getFieldValue('CRM_Core_DAO_Navigation', 'Memberships', 'id', 'name');
+      $params[$reportID]['child'][$navId] = array (
+        'attributes' => array (
+          'label' => ts('Angular extension',array('domain' => 'org.civicrm.angularext')),
+          'name' => 'Angular extension',
+          'url' => 'civicrm/a/#/main',
+          'permission' => 'access CiviReport,access CiviContribute',
+          'operator' => 'OR',
+          'separator' => 1,
+          'parentID' => $reportID,
+          'navID' => $navId,
+          'active' => 1
+    )   
+  );  
+}
+
+?>

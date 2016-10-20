@@ -1,0 +1,5 @@
+name = Compucorp Angular Hooks 
+description = Hook for Compucorp's Angular extension
+dependencies[] = civicrm 
+package = CiviCRM 
+core = 7.x 

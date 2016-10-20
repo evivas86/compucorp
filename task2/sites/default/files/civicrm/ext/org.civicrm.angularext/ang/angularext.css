@@ -1,0 +1,4 @@
+/* Add any CSS rules for Angular module "angularext" */
+#civicrm-menu input {
+    box-sizing: inherit !important;
+}

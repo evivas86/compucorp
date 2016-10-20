@@ -1,0 +1,29 @@
+Oct 12 20:51:11  [info] Creating canary table
+
+Oct 12 22:58:48  [info] Ignoring exception thrown by nullHandler: , mail() returned failure
+
+Oct 12 22:58:48  [info] $backTrace = #0 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\Error.php(949): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::nullHandler(Object(PEAR_Error))
+#2 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\PEAR.php(921): call_user_func((Array:2), Object(PEAR_Error))
+#3 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\PEAR.php(577): PEAR_Error->__construct("mail() returned failure", NULL, 16, (Array:2), NULL)
+#4 [internal function](): PEAR::_raiseError(NULL, "mail() returned failure")
+#5 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\PEAR.php(237): call_user_func_array((Array:2), (Array:2))
+#6 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\Mail\mail.php(175): PEAR::__callStatic("raiseError", (Array:1))
+#7 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\Mail\mail.php(175): PEAR::raiseError("mail() returned failure")
+#8 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Admin\Form\Setting\Smtp.php(167): Mail_mail->send("evivas.86@gmail.com", (Array:3), "mail settings are correct.")
+#9 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\Form.php(431): CRM_Admin_Form_Setting_Smtp->postProcess()
+#10 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\QuickForm\Action\Refresh.php(75): CRM_Core_Form->mainProcess()
+#11 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\HTML\QuickForm\Controller.php(203): CRM_Core_QuickForm_Action_Refresh->perform(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#12 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\packages\HTML\QuickForm\Page.php(103): HTML_QuickForm_Controller->handle(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#13 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\Controller.php(351): HTML_QuickForm_Page->handle("refresh")
+#14 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Utils\Wrapper.php(113): CRM_Core_Controller->run()
+#15 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\Invoke.php(286): CRM_Utils_Wrapper->run("CRM_Admin_Form_Setting_Smtp", "Outbound Email Settings", NULL)
+#16 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\Invoke.php(86): CRM_Core_Invoke::runItem((Array:13))
+#17 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\CRM\Core\Invoke.php(54): CRM_Core_Invoke::_invoke((Array:4))
+#18 C:\wamp\www\compucorp\task2\sites\all\modules\civicrm\drupal\civicrm.module(448): CRM_Core_Invoke::invoke((Array:4))
+#19 [internal function](): civicrm_invoke("admin", "setting", "smtp")
+#20 C:\wamp\www\compucorp\task2\includes\menu.inc(527): call_user_func_array("civicrm_invoke", (Array:3))
+#21 C:\wamp\www\compucorp\task2\index.php(21): menu_execute_active_handler()
+#22 {main}
+
+
